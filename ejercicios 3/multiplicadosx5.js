@@ -1,15 +1,4 @@
-/*Esto no funciona :(
-    
-    function multiplicadox5(array){
 
-    array.forEach(function(element) {
-        element*=5;
-        console.log(element);
-        
-    });
-
-    return array;
-}*/
 
 function multiplicadox5(array){
 
