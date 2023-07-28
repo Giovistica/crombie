@@ -1,0 +1,22 @@
+function solution(inputString) {
+
+let indices = [];
+
+for(i=0; i < inputString.length; i++){
+    
+    if(inputString[i] == "("){
+        
+        indices.push(i);
+        
+    }
+    else if(inputString[i] == ")"){
+      
+     inputString = inputString.substring(0,indices[indices.length-1]+1) 
+     + inputString.substring(indices[indices.length -1]+1, i).split('').reverse().join('') 
+     + inputString.substring(i,inputString.length);
+     
+    indices.pop();
+    }    
+}
+return inputString.replace(/[()]/g, "")
+}

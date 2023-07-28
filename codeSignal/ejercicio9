@@ -1,0 +1,20 @@
+function solution(inputArray) {
+    
+   let large = 0;
+   let outputArray = [];
+   
+   for (i = 0; i < inputArray.length; i++){
+       
+       if (inputArray[i].length >large) large = inputArray[i].length;
+       
+   }
+  
+   for (i = 0; i < inputArray.length; i++){
+       
+       if(inputArray[i].length == large) outputArray.push(inputArray[i]);
+       
+   }
+   
+   return outputArray;
+
+}

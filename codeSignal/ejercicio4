@@ -1,0 +1,14 @@
+function solution(inputArray) {
+
+let producto = inputArray[0]*inputArray[1];
+
+  while (inputArray.length > 0)
+  { 
+    inputArray.shift()
+    if (producto < inputArray[0]*inputArray[1])
+    producto = inputArray[0]*inputArray[1]
+  }
+  
+
+return producto
+}

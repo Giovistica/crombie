@@ -1,0 +1,24 @@
+function solution(a) {
+ 
+ let people = [];   
+  
+for (i= 0; i<a.length; i++){
+    
+    if(a[i] !=-1) people.push(a[i]);
+      
+    
+}
+
+people.sort(function(a,b){return a-b});
+
+
+let j= 0;
+for (i= 0; i<a.length; i++){
+    
+    if(a[i] !=-1) 
+      {a[i]=people[j];
+      j++;
+    }
+}
+return a;
+}

@@ -1,0 +1,16 @@
+function solution(sequence) {
+    let removed = 0
+    
+    for(i=0; i < sequence.length -1; i++){
+        
+        if(sequence[i+1]<=sequence[i]) 
+          {removed ++;
+          
+          if(sequence[i+1]<=sequence[i-1] && sequence[i+2]<=sequence[i])
+    
+            removed++;     
+          }
+    } 
+
+return removed<2;
+}

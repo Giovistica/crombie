@@ -1,0 +1,17 @@
+function solution(n) {
+let mitad1=0;
+let mitad2=0;
+
+n = n.toString();
+
+for (i = 0; i < (n.length)/2; i++){
+    
+    mitad1+= parseInt(n[i]);
+}
+for (i = n.length/2; i < n.length; i++){
+    
+    mitad2+= parseInt(n[i]);
+}
+
+return mitad1 == mitad2;
+}
